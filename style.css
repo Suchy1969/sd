@@ -1,0 +1,221 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: rgba(36, 18, 121, 0.9);
+}
+.nie-znaleziono img{
+    max-width: 50%;
+    margin-top: 40px;
+}
+.container{
+
+    position: relative;
+    width: 500px;
+    height: 120px;
+    background: white;
+    padding: 30px 34px;
+    overflow: hidden;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+
+}
+.wyszukiwanie{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.wyszukiwanie input {
+    color: rgb(0, 0, 0);
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 40px;
+
+    border-radius: 10px;
+
+}
+
+.wyszukiwanie input::placeholder{
+font-size: 20px;
+font-weight: 600;
+text-transform: capitalize;
+color: black;
+
+
+
+} 
+.wyszukiwanie button{
+width: 60px;
+height: 60px;
+color: black;
+cursor: pointer;     
+border-radius: 50%;
+background: skyblue;
+font-size: 25px;
+transition: 0.3 ease;
+
+
+}
+.wyszukiwanie button:hover{ 
+color:white;
+background-color: black;
+font-size: 20px;
+
+}
+.wyszukiwanie i{
+    font-size: 30px;
+    position: absolute;
+    color: black;
+
+}
+.pogoda-box{
+    text-align: center;
+
+}
+.pogoda-box img{
+    width: 65%;
+    margin-top: 40px;
+}
+.pogoda-box .temperatura{
+
+    position: relative;
+    color: black;
+    font-size: 4rem;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-left: -20px;
+    
+
+}
+.pogoda-box .temperatura span{
+
+    position: absolute;
+    margin-left: 5px;
+    font-size: 2rem;
+
+}
+.pogoda-box .opis {
+    color: black;
+    font-size:30px;
+    font-weight: 600;
+    text-transform: capitalize;
+     
+
+}
+.pogoda-inf{
+width: 100%;
+margin-top: 40px;
+display: flex;
+justify-content: space-between;
+
+}
+.pogoda-inf .wilgotnosc, .pogoda-inf .wiatr{
+display: flex;
+align-items: center;
+width: 50%;
+height: 120px;
+
+}
+.pogoda-inf .wilgotnosc{
+
+    padding-left: 30px;
+    justify-content: flex-start;
+
+
+} 
+.pogoda-inf .wiatr{
+    padding-right: 30px;
+    justify-content: flex-end;
+
+}
+.pogoda-inf i{
+    color: black;
+    font-size: 30px;
+    margin-right: 15px;
+    margin-top: 10px;
+
+}
+
+.pogoda-inf span{
+
+    color: black;
+     font-size: 30px;
+     font-weight: 600;
+
+}
+.pogoda-inf p{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+
+
+}
+.nie-znaleziono{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    opacity: 0;
+    scale: 0;
+    display: none;
+    
+}
+.nie-znaleziono p{
+    margin-top: 15px;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+.nie-znaleziono img{
+    width: 75%;
+
+}
+.pogoda-box, .pogoda-inf{
+    scale: 0;
+    opacity: 0;
+
+}
+
+.fadeIn{
+    animation: 0.6s fadeIn forwards;
+    animation-delay: 0.6s;
+
+
+}
+
+@keyframes fadeIn{
+    to {
+        scale: 1;
+        opacity: 1;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
